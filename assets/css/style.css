@@ -1,0 +1,290 @@
+.dropdown-toggle::after {
+   position: absolute;
+   top: 16px;
+   right: 20px;
+ }
+  .iconstyle{
+     padding: 6px;
+     font-size: 24px;
+     color: gray;
+  }
+  .image-checkbox {
+    cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 4px solid transparent;
+    margin-bottom: 0;
+    outline: 0;
+  }
+
+  .image-checkbox input[type="checkbox"] {
+    display: none;
+  }
+
+  .image-checkbox-checked {
+    border-color: #4783B0;
+  }
+
+  .image-checkbox .ab {
+    position: absolute;
+    color: #4A79A3;
+    background-color: #fff;
+    padding: 10px;
+    top: 0;
+    right: 0;
+  }
+
+  .image-checkbox-checked .ab {
+    display: block !important;
+  }
+  .thumbnail{margin-bottom: 0px;}
+
+  .switch {
+     position: relative;
+     display: inline-block;
+     width: 50px;
+     height: 22px;
+     margin-left: 30px;
+   }
+
+   .switch input {
+     opacity: 0;
+     width: 0;
+     height: 0;
+   }
+
+   .slider {
+     position: absolute;
+     cursor: pointer;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #ccc;
+     -webkit-transition: .4s;
+     transition: .4s;
+   }
+
+   .slider:before {
+     position: absolute;
+     content: "";
+     height: 26px;
+     width: 26px;
+     left: 4px;
+     bottom: 4px;
+     background-color: white;
+     -webkit-transition: .4s;
+     transition: .4s;
+   }
+
+   input:checked + .slider {
+     background-color: #2196F3;
+   }
+
+   input:focus + .slider {
+     box-shadow: 0 0 1px #2196F3;
+   }
+
+   input:checked + .slider:before {
+     -webkit-transform: translateX(26px);
+     -ms-transform: translateX(26px);
+     transform: translateX(26px);
+   }
+
+   /* Rounded sliders */
+   .slider.round {
+     border-radius: 34px;
+   }
+
+   .slider.round:before {
+     border-radius: 50%;
+   }
+   .text-format-style{
+     border: 1px solid gray;
+     padding: 4px;
+     cursor: pointer;
+   }
+   .boldStyle{
+     border: 1px solid gray;
+     padding: 4px;
+     cursor: pointer;
+   }
+
+   .ul {
+     padding:0;
+     margin:0;
+     font-family:arial;
+   }
+
+   .li {
+     list-style:none;
+     display:inline-block;
+     font-size:12px;
+   }
+
+   .span {
+     padding:5px;
+     cursor:pointer;
+     font-weight:bold;
+     transition:all .2s ease;
+     font-size:14px;
+   }
+
+   input:checked + .span {
+     background: gainsboro;
+   }
+   .addstyle{background: gainsboro;}
+   /* .col-sm-3{width: 100%!important;max-width: none!important;padding-bottom: 20px;} */
+   /* .col-sm-3{padding-left: 0px;padding-right: 12px} */
+
+/* Loader */
+/* -----------------------------------------
+  =Default css to make the demo more pretty
+-------------------------------------------- */
+
+
+/* =Elements style
+---------------------- */
+.load-wrapp {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 10px 0;
+    padding: 20px 20px 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    top: 200px;
+    left: 46%;
+}
+
+
+.line {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #4b9cdb;
+}
+
+
+
+.load-3 .line:nth-last-child(1) {animation: loadingC .6s .1s linear infinite;}
+.load-3 .line:nth-last-child(2) {animation: loadingC .6s .2s linear infinite;}
+.load-3 .line:nth-last-child(3) {animation: loadingC .6s .3s linear infinite;}
+
+@keyframes loadingC {
+    0 {transform: translate(0,0);}
+    50% {transform: translate(0,15px);}
+    100% {transform: translate(0,0);}
+}
+
+#overlayer {
+  width:100%;
+  height:100%;
+  position:absolute;
+  z-index:1;
+  background:#4a4a4abd;
+}
+
+.cc-selector input {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.cc-selector-2 input {
+  position: absolute;
+  z-index: 999;
+}
+
+.cc-selector-2 input:active +.drinkcard-cc,
+.cc-selector input:active +.drinkcard-cc {
+  opacity: .9;
+}
+
+.cc-selector-2 input:checked +.drinkcard-cc,
+.cc-selector input:checked +.drinkcard-cc {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+}
+
+.drinkcard-cc {
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 50px;
+  height: 35px;
+}
+
+.drinkcard-cc:hover {
+  -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+  -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+  filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+.card-header{
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%!important;
+}
+body{
+  font-family: -apple-system,BlinkMacSystemFont,San Francisco,Roboto,Segoe UI,Helvetica Neue,sans-serif!important;
+  background-color: #7d7c7c0f;
+}
+.colapse-head{
+  font-weight: 500;font-size:1.5rem;padding-left:20px;color: rgb(33 43 54);
+}
+.setting-heading{
+  font-weight: 500;
+  line-height: 5.4rem;
+  margin: 0;
+  font-size: 1.6rem;
+  color: black;
+}
+.text-heading{
+  margin-bottom: 0px;font-Size:13px
+}
+.m-b-20{margin-bottom: 20px;}
+.color-type{
+  border: 1px solid gray;
+  height: 34px;
+  padding: 2px;
+  width: 32%;
+  margin-left: 11px;
+}
+.group-size{display: flex;}
+.size-style{border-radius: 0px!important;border: 1px solid gray;}
+.align-icon{
+  padding: 8px;
+  font-size: 17px;
+  margin-right: -4px;
+  border-right: none;
+}
+.card-border{border: 1px solid gray;border-right: none;}
+.slider::before{
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 2px;
+}
+.bdg_setting{
+  position: relative;
+  left: 22px;
+}
+.bdg_setting-after{
+  position: relative;
+  left: 25px;
+}
+.fixed-card{position: fixed;left: 15px;right: 15px;top: 0;z-index: 1;}
+.lower-card{margin-top: 292px;position: relative;z-index: 0;}
+.net-style{overflow-y: auto;
+  margin: 15px;
+  padding: 15px 15px 15px 15px;
+  width: 97%;height: 200px;
+  position: relative;
+  background: rgb(239 239 239) url('https://amkwebsolutions.com/shopify-app/badge_app/assets/images/iconnew.png') repeat scroll 0% 0%;
+}
